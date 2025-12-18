@@ -1,0 +1,216 @@
+/* =========================
+   Global Reset & Variables
+========================= */
+:root {
+    --primary-green: #22c55e;
+    --dark-green: #15803d;
+    --light-green-bg: #e9f7ef;
+    --text-dark: #1f2937;
+    --text-muted: #6b7280;
+    --border-color: #e5e7eb;
+    --card-bg: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: linear-gradient(90deg, #f3f4f6 0%, var(--light-green-bg) 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-dark);
+}
+
+/* =========================
+   Main Container
+========================= */
+.container {
+    width: 100%;
+    max-width: 1100px;
+    padding: 1rem;
+}
+
+/* =========================
+   Login Card
+========================= */
+.login-card {
+    background: var(--card-bg);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================
+   Left Section
+========================= */
+.login-left {
+    background: #e6f6ec;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.login-left img {
+    width: 140px;
+    height: auto;
+    margin-bottom: 1.5rem;
+}
+
+.login-left h2 {
+    color: #7f1d1d;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.login-left p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+}
+
+.login-left a {
+    color: var(--dark-green);
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+/* =========================
+   Right Section
+========================= */
+.login-right {
+    padding: 3rem 2.5rem;
+}
+
+.login-right .logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+.login-right .logo img {
+    width: 50px;
+}
+
+.login-right h3 {
+    text-align: center;
+    color: var(--dark-green);
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+}
+
+/* =========================
+   Form
+========================= */
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+    color: var(--text-dark);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem 0.85rem;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    font-size: 0.95rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--primary-green);
+    box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.2);
+}
+
+.form-extra {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1.5rem;
+}
+
+.form-extra a {
+    font-size: 0.85rem;
+    color: var(--dark-green);
+    text-decoration: none;
+}
+
+.form-extra a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   Button
+========================= */
+.btn-login {
+    width: 100%;
+    background: var(--primary-green);
+    color: #ffffff;
+    padding: 0.8rem;
+    border-radius: 6px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.btn-login:hover {
+    background: #16a34a;
+}
+
+.btn-login:active {
+    transform: scale(0.98);
+}
+
+/* =========================
+   Footer Links
+========================= */
+.help-text {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.help-text a {
+    color: var(--dark-green);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.help-text a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   Responsive Design
+========================= */
+@media (max-width: 900px) {
+    .login-card {
+        grid-template-columns: 1fr;
+    }
+
+    .login-left {
+        padding: 2rem 1.5rem;
+    }
+
+    .login-right {
+        padding: 2rem 1.5rem;
+    }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | KNUST AIM</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-card">
+            <!-- Left Section -->
+            <div class="login-left">
+                <img src="assets/aim-logo.png" alt="AIM Logo">
+                <h2>Academic Info Manager</h2>
+                <p>You can also access the Student Portal on your mobile phone.</p>
+                <a href="#">Download App</a>
+            </div>
+
+            <!-- Right Section -->
+            <div class="login-right">
+                <div class="logo">
+                    <img src="assets/knust-logo.png" alt="KNUST Logo">
+                </div>
+                <h3>Login</h3>
+
+                <form id="loginForm" action="save.php" method="POST">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" placeholder="eg. username" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter password" required>
+                    </div>
+
+                    <div class="form-extra">
+                        <a href="#">Forgot password?</a>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="studentId">Student ID</label>
+                        <input type="text" id="studentId" name="studentId" placeholder="eg. 00000000" required>
+                    </div>
+
+                    <button type="submit" class="btn-login">Log In</button>
+                </form>
+
+                <p class="help-text">
+                    Having issues accessing your portal? <a href="#">Create a ticket</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
