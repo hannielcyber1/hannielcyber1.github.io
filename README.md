@@ -1,7 +1,7 @@
 # 🎣 Phishing Awareness Demonstration Website
 
 > **⚠️ Educational Project**  
-> This project is a **Phishing awareness demonstration** created for cybersecurity education and research purposes. It was developed to replicate a university login page as part of a controlled lab environment to demonstrate how phishing attacks work and how users can recognize them.
+> This project is a **Phishing Awareness demonstration** created for cybersecurity education and research purposes. It was developed to replicate a university login page as part of a controlled lab environment to demonstrate how phishing attacks work and how users can recognize them.
 
 ---
 
